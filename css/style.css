@@ -135,7 +135,10 @@ header .container {
 }
 
 .hero {
-    background-color: var(--title-text-color);
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/photo17.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
     padding-top: 192px;
     padding-bottom: 192px;
@@ -413,8 +416,6 @@ header .container {
     color: var(--primary-text-color);
 
 }
-
-
    
 .description {
  margin-top: 8px;
@@ -427,4 +428,122 @@ header .container {
 .project-wrapper{
     padding: 32px 0;
     padding-left: 16px;
+}
+
+/* icon*/
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    height: 112px;
+    background-color: var(--active-btm-color);
+}
+
+.social-link-list-item {
+    width: 40px;
+    height: 40px;
+}
+
+.social-link-icon {
+    background-color: var(--accent-clor);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon {
+    fill: var(--secondary-color);
+    width: 16px;
+    height: 16px;
+
+    display: inline-block;
+    align-items: center;
+}
+
+.social-link-list {
+    gap: 24px;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.client-list {
+    display: flex;
+    gap: 24px;
+}
+
+.client-list-item {
+    width: 168px;
+}
+
+.client-link {
+    display: inline-flex;
+    width: 100%;
+    height: 88px;
+
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid color#8e8f99;
+    border-radius: 4px;
+    color: #8e8f99;
+}
+
+.client-icon {
+    fill: currentColor;
+    width: 104px;
+    height: 56px;
+}
+
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
+    fill: var(--accent-clor);
+}
+
+.client-link:hover,
+.client-link:focus {
+    border: 1px solid var(--accent-clor);
+}
+
+.footer-secondary{
+    margin-right: 120px;
+}
+
+.footer-title {
+    color: var(--primary-white-color);
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    letter-spacing: 0.02em;
+}
+
+.footer-social-link .social-link-list {
+    display: flex;
+    gap: 16px;
+    margin: 0;
+}
+
+.footer-social-link .social-list-item {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-social-link .social-link-icon {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-link .social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-social-link .social-link-icon:hover,
+.footer-social-link .social-link-icon:focus {
+    background-color: #31d0aa;
 }
